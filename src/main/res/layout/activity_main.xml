@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".MainActivity">
+
+
+
+<ImageView
+
+    android:layout_width="wrap_content"
+    android:layout_marginTop="40dp"
+    android:id="@+id/ticket_logo"
+    android:layout_height="60dp"
+    android:src="@drawable/logo2"
+    />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/text"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/ticket_logo"
+            android:text="Off mode scans email tickets | On mode scans hard copy tickets"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/text2"
+
+            android:textSize="16sp"
+
+            android:layout_width="wrap_content"
+            android:textColor="#808080"
+            android:textStyle="bold"
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/text"
+            android:text="Email Tickets Mode "
+            android:layout_height="wrap_content" />
+
+        <Switch
+
+           android:id="@+id/toggle"
+            android:checked="false"
+
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/ticket_logo"
+            android:scaleX="2.0"
+            android:scaleY="2.0"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+        <EditText
+            android:id="@+id/event_key"
+            android:layout_below="@+id/toggle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Enter Key"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:drawableLeft="@drawable/ic_key"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:paddingRight="60dp"
+            android:paddingLeft="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_key"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_submit"
+            android:layout_marginTop="20dp"
+            android:text="CONTACT TICKETLIST TO GET YOUR KEY"
+
+            />
+
+
+
+
+    <Button
+            android:clickable="true"
+
+            android:id="@+id/button_submit"
+            android:layout_width="200dp"
+            android:text="Submit"
+            android:textSize="22sp"
+             android:textAllCaps="false"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/event_key"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_height="40dp" />
+
+   <!-- <Switch
+        android:id="@+id/flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_key"
+        android:layout_marginTop="20dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:layout_centerHorizontal="true"
+
+
+
+         />
+
+    <ImageView
+        android:src="@drawable/ic_off"
+        android:layout_toLeftOf="@+id/flash"
+        android:layout_below="@+id/text_key"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        />-->
+
+
+
+
+
+     <FrameLayout
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_margin="10dp"
+
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+
+
+            app:fabCustomSize="104dp"
+            app:maxImageSize="65dp"
+
+            android:src="@drawable/ic_scan"
+            android:id="@+id/scanBtn" />
+
+     </FrameLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
